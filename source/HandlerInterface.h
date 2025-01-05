@@ -1,5 +1,5 @@
-#ifndef API_HANDLER_INTERFACE_H
-#define API_HANDLER_INTERFACE_H
+#ifndef HANDLER_INTERFACE_H
+#define HANDLER_INTERFACE_H
 
 #include "API.h"
 #include "APIHandlerBase.h"
