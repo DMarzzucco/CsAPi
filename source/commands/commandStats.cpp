@@ -7,7 +7,7 @@
 
 namespace csconnector
 {
-	namespace call_stats
+	namespace command_stats
 	{
         constexpr size_t NumCommands = static_cast<size_t>(Commands::Max);
 		using Counter = std::atomic<int>;

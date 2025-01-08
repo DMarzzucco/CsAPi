@@ -5,7 +5,7 @@
 
 namespace csconnector
 {
-	namespace call_stats
+	namespace command_stats
 	{
 		void start();
 		void stop();
