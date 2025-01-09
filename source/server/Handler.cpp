@@ -1,5 +1,5 @@
 #include "Handler.h"
-#include "CallStats.h"
+#include "CommandsStats.h"
 #include "DebugLog.h"
 #include "Validation.h"
 #include "csconnector/csconnector.h"
@@ -81,7 +81,7 @@ void APIHandler::TransactionFlow(TransactionFlowResult& _return, const Transacti
 
     SetResponseStatus(_return.status, handled);
 
-    call_stats::count(Commands::TransactionFlow);
+    command_stats::count(Commands::TransactionFlow);
 }
 
 void APIHandler::PoolListGet(PoolListGetResult& _return, const int64_t offset, const int64_t limit)

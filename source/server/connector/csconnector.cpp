@@ -2,7 +2,7 @@
 #include "DebugLog.h"
 #include "Handler.h"
 #include "DBHandlers.h"
-#include "CallStats.h"
+#include "CommandStats.h"
 
 #include <thread>
 #include <memory>
@@ -93,12 +93,12 @@ namespace csconnector
     {
         DbHandlers::init(m_storage);
         detail::start(config);
-        call_stats::start();
+        command_stats::start();
     }
 
     void stop()
     {
-        call_stats::stop();
+        command_stats::stop();
         detail::stop();
         DbHandlers::deinit();
     }
