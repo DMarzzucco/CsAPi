@@ -1,5 +1,5 @@
-#ifndef CALL_STATS_H
-#define CALL_STATS_H
+#ifndef COMMANDS_STATS_H
+#define COMMANDS_STATS_H
 
 #include <csconnector/csconnector.h>
 
@@ -14,4 +14,4 @@ namespace csconnector
 	}
 }
 
-#endif // CALL_STATS_H
+#endif // COMMANDS_STATS_H
